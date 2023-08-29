@@ -245,3 +245,4 @@ SELECT e.employeeID,e.firstName,e.lastName, SUM(o.orderTotal) as TotalSales FROM
 # Execute the SQL query using the cursor to retrieve the top 5 employees based on sales
 top_employees = c.execute(top_employee_query).fetchall()
 print(top_employees)
+print('--------------------------------')
